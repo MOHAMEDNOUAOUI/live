@@ -1,0 +1,15 @@
+<div class="chart-container">
+        <ul class="chartgraph">
+            <li><span>+20</span></li>
+            <li><span>15</span></li>
+            <li><span>10</span></li>
+            <li><span>5</span></li>
+        </ul>
+
+        <div class="barsContainer">
+
+            @for (bar of bars; track $index) {
+                <app-chart-bar [Color]="backgroundColor(bar.value)" [height]="calculateheight(bar.value)"  [text]="bar.name"></app-chart-bar>
+            }
+        </div>
+</div>
