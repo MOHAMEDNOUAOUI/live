@@ -1,4 +1,5 @@
-.mainpage {
-    height: 100vh;
+.mainpage{
     width: 100vw;
+    height: 100vh;
+    background-color: grey;
 }

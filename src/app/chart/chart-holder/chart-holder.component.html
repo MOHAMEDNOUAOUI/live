@@ -1,0 +1,16 @@
+<div class="chart-holder">
+    <ul>
+        <li><span>120</span></li>
+        <li><span>100</span></li>
+        <li><span>80</span></li>
+        <li><span>60</span></li>
+        <li><span>40</span></li>
+    </ul>
+
+    <div class="chart-bars-holder">
+        @for (bar of Data; track $index) {
+            <app-chart-item [style.height]="calculteHeight(bar.value) + '%'" [text]="bar.name" [height]="bar.value"></app-chart-item>
+        }
+    </div>
+
+</div>

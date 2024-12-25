@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Chart": {
+    "LiveCoding": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/chart",
+            "outputPath": "dist/live-coding",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -51,8 +51,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "2kB",
+                  "maximumError": "4kB"
                 }
               ],
               "outputHashing": "all"
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Chart:build:production"
+              "buildTarget": "LiveCoding:build:production"
             },
             "development": {
-              "buildTarget": "Chart:build:development"
+              "buildTarget": "LiveCoding:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ChartBarComponent } from './chart-bar/chart-bar.component';
-import { ChartBarHolderComponent } from './chart-bar-holder/chart-bar-holder.component';
+import { ChartHolderComponent } from './chart-holder/chart-holder.component';
+import { ChartItemComponent } from './chart-item/chart-item.component';
 
 
 
 @NgModule({
   declarations: [
-    ChartBarComponent,
-    ChartBarHolderComponent
+    ChartHolderComponent,
+    ChartItemComponent
   ],
   imports: [
     CommonModule
   ],
-  exports:[ChartBarHolderComponent]
+  exports:[ChartHolderComponent]
 })
 export class ChartModule { }

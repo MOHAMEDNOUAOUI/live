@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ChartModule } from './chart/chart.module';
+import { ChartItemComponent} from "./chart/chart-item/chart-item.component";
+import { ChartModule } from "./chart/chart.module";
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { ChartModule } from './chart/chart.module';
     BrowserModule,
     AppRoutingModule,
     ChartModule
-  ],
+],
   providers: [],
   bootstrap: [AppComponent]
 })
